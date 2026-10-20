@@ -14,6 +14,14 @@ public class Student extends Object {
 	int geschlecht;
 	Datum gebdat;
 
+	/**
+	 * Konstruiert eine Instanz der Klasse und initialisiert 
+	 * alle Felder anhand der Parameter.
+	 * @param vorname
+	 * @param name
+	 * @param geschlecht
+	 * @param gebdat
+	 */
 	public Student(String vorname, String name, int geschlecht, Datum gebdat) {
 		this(vorname, name); // Wir verwenden den bereits vorhandenen Konstruktor (hier unten)
 		this.geschlecht = geschlecht;
