@@ -5,7 +5,7 @@ package basics;
 /// eines Objektes sind Felder (Fields) der Klasse
 public class Student extends Object {
 
-	public static final int WEIBLICH = 0;
+	public static final int WEIBLICH = 22;
 	public static final int MANNLICH = 1;
 
 	// Felder der Klasse:

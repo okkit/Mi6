@@ -1,6 +1,10 @@
 package pets.zuechter.objekte;
 
+import java.time.LocalDate;
+
 import pets.Art;
+import pets.Geschlecht;
+import pets.Superpet;
 
 //In einer Software für einen Züchter
 //Variante 1 Pet kaufen
@@ -10,17 +14,18 @@ import pets.Art;
 //pass
 //alter
 
-public class Pet {
+public class Pet extends Superpet{
 
-	public static final String[] ARTEN = { "Hund", "Katze" };
+//	Geschlecht geschlecht;
+//	Art art;
+	boolean hatStammbaum;
+	boolean hatPass;
+	LocalDate geburtsdatum;
+	
+	
+	public Pet(Art art, Geschlecht geschlecht) {
+		super(art, geschlecht);
 
-	public static final int WEIBCHEN = 10;
-	public static final int RÜDE = 100;
-
-	int geschlecht;
-	public Art art;
-//	stammbauch
-//	pass
-//	alter
+	}
 
 }
