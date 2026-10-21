@@ -17,7 +17,7 @@ public class TestObjekte {
 		while (IO.readln("Der Nächste? ").equals("ja")) {
 
 			String name = IO.readln("Ihr name? ");
-			String spez = IO.readln("Was wollen Sie werden? " + "a = SI, b = AE, c = DA");
+			String spez = IO.readln("Was wollen Sie werden? " + "a = SI, b = AE, c = DA\n");
 
 			Spezialisierung wahl = null;
 			if (spez.equals("a"))
@@ -29,7 +29,8 @@ public class TestObjekte {
 
 			// Die Instanz azubi wird letztenendes in die DB gespeichert
 			Azubi azubi = new Azubi(++id, name, wahl);
-			IO.println("Eingetragen wurde die Instanz " + azubi);
+			IO.println("-------------------------------");
+			IO.println("Eingetragen.\n " + azubi.toString());
 		}
 		
 		IO.print("Ende");
