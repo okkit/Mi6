@@ -2,8 +2,8 @@ package pets;
 
 /// Die Mutterklasse aller Pets
 public class Superpet {
-	Art art;
-	Geschlecht geschlecht;
+	public Art art;
+	public Geschlecht geschlecht;
 	
 	public Superpet(Art art, Geschlecht geschlecht) {
 		super();
@@ -11,9 +11,9 @@ public class Superpet {
 		this.geschlecht = geschlecht;
 	}
 
+	/// Standartkonstruktor
 	public Superpet() {
-		// TODO Auto-generated constructor stub
+		// Kann auch leer bleiben
 	}
-	
 	
 }
