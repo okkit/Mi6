@@ -1,6 +1,7 @@
 package bbq.objekte.tests;
 
 import bbq.objekte.Azubi;
+import bbq.objekte.Gruppe;
 import bbq.objekte.Spezialisierung;
 
 public class TestObjekte {
@@ -11,7 +12,10 @@ public class TestObjekte {
 		Spezialisierung si = new Spezialisierung(1, "SI");
 		Spezialisierung ae = new Spezialisierung(2, "AE");
 		Spezialisierung da = new Spezialisierung(3, "DA");
-		
+
+		Gruppe u30 = new Gruppe(1, "U30");
+		Gruppe u31 = new Gruppe(2, "U31");
+
 		int id = 0;
 
 		while (IO.readln("Der Nächste? ").equals("ja")) {
@@ -27,12 +31,15 @@ public class TestObjekte {
 			else if (spez.equals("c"))
 				wahl = da;
 
-			// Die Instanz azubi wird letztenendes in die DB gespeichert
 			Azubi azubi = new Azubi(++id, name, wahl);
-			IO.println("-------------------------------");
-			IO.println("Eingetragen.\n " + azubi.toString());
+
+			u30.aufnehmeInDieGruppe(azubi);
+
+			azubi = new Azubi(++id, "Mischa", ae);
+			u30.aufnehmeInDieGruppe(azubi);
+
 		}
-		
+
 		IO.print("Ende");
 	}
 

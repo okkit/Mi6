@@ -12,7 +12,7 @@ public class Azubi extends BBQObjekt {
 	/**
 	 * Name des/der Azubi's
 	 */
-	String name;
+	protected String name;
 	Spezialisierung spezialisierung;
 
 	/**
