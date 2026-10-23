@@ -8,7 +8,7 @@ public class BBQObjekt extends Object{
 	/**
 	 * Entspricht dem PK
 	 */
-	int id;
+	public int id;
 
 	public BBQObjekt(int id) {
 		this.id = id;
@@ -16,13 +16,13 @@ public class BBQObjekt extends Object{
 	
 	// Wir überschreiben die Methode toString() der Klasse Object
 	
-	@Override
-	public String toString() {
-
-		String info = super.toString() + " \n";
-		info = info + "Eine Instanz der Klasse BBQObject\n";
-		info = info + " id: " + id;
-		return info;
-	}
+//	@Override
+//	public String toString() {
+//
+//		String info = super.toString() + " \n";
+//		info = info + "Eine Instanz der Klasse BBQObject\n";
+//		info = info + " id: " + id;
+//		return info;
+//	}
 	
 }
