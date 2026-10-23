@@ -23,15 +23,20 @@ public class Test_Fach_Spezialisierung {
 //		Spezialisierung
 //		ACHTUNG! Die 1:m Beziehung beachten
 		
-		Spezialisierung ae = new Spezialisierung(42, "AE", f.id);
+		Spezialisierung ae = new Spezialisierung(42, "AE");
 		IO.println(ae.id);
 		
-		Spezialisierung si = new Spezialisierung(128, "SI", f.id);
+		ae.fach = f;
+		IO.println(ae.fach.fachName);
+		
+		Spezialisierung si = new Spezialisierung(128, "SI");
 		IO.print(si.bezeichnung );
 		
 //		Aufgabe 2.c
+//		Wir haben jetzt NUR das Obkekt si.
+//		Das Objekt f (s. oben) vergessen wir jetzt, als wäre es nicht da.
 //		Wir wollen erfahren, wie das Fach heißt, zu dem die
-//		Spezialisierung ae gehört.
+//		Spezialisierung ae gehört. 
 //		Wie können wir es verwirklichen? Geht das überhaupt?
 		
 //		Aufgabe 2.d

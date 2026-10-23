@@ -9,17 +9,16 @@ package bbq.objekte;
  */
 public class Spezialisierung extends BBQObjekt {
 	
-	public int fach_id; // FK = PK aus Fach
+	public Fach fach;
 
 	/**
 	 * Bezeichnung der Spezialisierung
 	 */
 	public String bezeichnung;
 
-	public Spezialisierung(int id, String bezeichnung, int fach_id) {
+	public Spezialisierung(int id, String bezeichnung) {
 		super(id);
 		this.bezeichnung = bezeichnung;
-		this.fach_id = fach_id;
 	}
 
 //	@Override

@@ -14,6 +14,7 @@ public class Azubi extends BBQObjekt {
 	 */
 	protected String name;
 	Spezialisierung spezialisierung;
+	Gruppe gruppe;
 
 	/**
 	 * 

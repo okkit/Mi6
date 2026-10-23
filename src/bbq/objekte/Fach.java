@@ -1,8 +1,11 @@
 package bbq.objekte;
 
+import java.util.ArrayList;
+
 public class Fach extends BBQObjekt{
 	
 	public String fachName;
+	ArrayList<Spezialisierung> spezialisierungen;
 	
 // Egal wo
 //	Fach f = new Fach();
